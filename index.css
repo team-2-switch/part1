@@ -1,0 +1,52 @@
+/*formats the log in form*/
+form {
+    background-color: #424242;
+    border: black solid 1px;
+    margin: auto;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+/*Format the input fields*/
+input[type=text], input[type=password] {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 8px;
+    padding: 12px 20px;
+    width: 95%
+}
+/*Format the container for form*/
+div.container {
+    width: auto;
+    margin: 8px;
+
+
+}
+/*Format the labels*/
+label {
+    margin-left: 10px;
+    color: #9E9E9E;
+}
+/*Change font for the page*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    margin-left: 83%;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    background-color: #9E9E9E;
+    padding: 8px;
+}
+button:hover{
+    opacity: .7;
+}
+
+body{
+    background-color: #212121;
+}
