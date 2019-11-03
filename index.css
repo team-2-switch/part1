@@ -116,3 +116,7 @@ div.content {
     padding: 1px 16px;
     height: 1000px;
 }
+
+div.textCenter{
+    text-align: center;
+}
