@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Problem Submission</title>
     <link rel="stylesheet" href="index.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<div class="sidebar">
+    <!-- This is a sidebar for navigation ()-->
+    <a href="#settings">Settings</a>
+    <a href="#problems">Problems</a>
+    <a href="#help">Help</a>
+    <a href="#exit">Exit</a>
+</div>
 <form>
+
     <div class="container">
-        <!-- This is form for problem submission-->
+        <!-- This is form for problem submission ()-->
+
+        <section>
         <label for="cname"><b>Caller Name</b>
             <input type="text" placeholder="Enter Caller Name..." name="cname" required>
         </label>
-        <br/>
+
         <label for="oname"><b>Operator Name</b>
             <input type="text" placeholder="Enter Operator Name..." name="oname" required>
+        </label>
+        <br/>
+
+        <label for="ctime"><b>Current Time</b>
+            <input type="text" placeholder="placeholder" name="oname" required>
         </label>
         <br/>
 
@@ -33,6 +49,13 @@
             <input type="text" placeholder="Software Used..." name="softwareused" required>
         </label>
         <br/>
+        </section>
+
+        <section><label for="xddd>"><b>Enter problem Details</b>
+            <textarea> </textarea>
+        </label>
+        <br/>
+        </section>
 
         <div class="center">
             <div class="double"><input type="checkbox" name="option1" value="solved"> Solved <input type="checkbox" name="option2" value="unsolved"> Unsolved<br></div></div>

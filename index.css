@@ -11,7 +11,7 @@ form {
     transform: translate(-50%, -50%);
 }
 /*Format the input fields*/
-input[type=text], input[type=password] {
+input[type=text], input[type=password], textarea {
     display: inline-block;
     box-sizing: border-box;
     margin: 8px;
@@ -22,8 +22,6 @@ input[type=text], input[type=password] {
 div.container {
     width: auto;
     margin: 8px;
-
-
 }
 /*Format the labels*/
 label {
@@ -71,4 +69,50 @@ div.double{
     -webkit-transform-origin: 0 0;
     -o-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
+}
+
+textarea {
+    height: 400px;
+    box-sizing: border-box;
+    margin: 8px;
+    padding: 12px 12px;
+    width: 100%
+
+}
+
+section {
+    display: inline-block;
+    width: 48.5%;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
 }
