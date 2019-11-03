@@ -10,6 +10,7 @@ form {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
 }
+
 /*Format the input fields*/
 input[type=text], input[type=password], textarea {
     display: inline-block;
@@ -18,22 +19,26 @@ input[type=text], input[type=password], textarea {
     padding: 12px 20px;
     width: 95%
 }
+
 /*Format the container for form*/
 div.container {
     width: auto;
     margin: 8px;
 }
+
 /*Format the labels*/
 label {
     margin-left: 10px;
     color: #9E9E9E;
 }
+
 /*Change font for the page*/
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
 
-button{
+/*format the button*/
+button {
     margin-left: 83%;
     border-radius: 2px;
     box-shadow: none;
@@ -41,15 +46,25 @@ button{
     background-color: #9E9E9E;
     padding: 8px;
 }
-button:hover{
+
+button:hover {
     opacity: .7;
 }
 
-body{
+body {
     background-color: #212121;
 }
 
-div.center{
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.prompt{
+    color: #9E9E9E ;
+}
+
+div.center {
     display: block;
     padding: 2%;
     margin-left: auto;
@@ -57,7 +72,7 @@ div.center{
     width: 25%;
 }
 
-div.double{
+div.double {
     zoom: 1.2;
     transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -90,7 +105,7 @@ section {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #424242;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -117,6 +132,9 @@ div.content {
     height: 1000px;
 }
 
-div.textCenter{
+div.textCenter {
     text-align: center;
+}
+form.submission-form{
+ margin-left: 11%;
 }
