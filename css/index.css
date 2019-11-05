@@ -1,4 +1,4 @@
-/*formats the log in form*/
+/*formats the form*/
 form {
     background-color: #424242;
     border: black solid 1px;
@@ -54,7 +54,7 @@ button:hover {
 body {
     background-color: #212121;
 }
-
+/*Make-it-All Logo*/
 .logo{
     display: block;
     margin-left: auto;
@@ -102,13 +102,17 @@ section {
 
 /* The side navigation menu */
 .sidebar {
-    margin: 0;
+    margin-left: 0;
     padding: 0;
     width: 200px;
     background-color: #424242;
     position: fixed;
     height: 100%;
     overflow: auto;
+    float: left;
+    left: 1px;
+    top: -1px;
+    border-right: 2px solid #191919;
 }
 
 /* Sidebar links */
