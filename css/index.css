@@ -86,13 +86,22 @@ div.double {
 }
 
 textarea {
-    height: 400px;
     box-sizing: border-box;
     margin: 8px;
     padding: 12px 12px;
     width: 100%
-
 }
+
+.textareaSize1{
+    height: 400px
+}
+
+.textareaSize2{
+    height: 150px
+}
+
+
+
 
 section {
     display: inline-block;
