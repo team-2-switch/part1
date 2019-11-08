@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Specialist Job Allocation</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
 </head>
 
@@ -13,36 +13,61 @@
 
     <!-- This is a sidebar for navigation ()-->
     <a href="#settings">Settings</a>
-    <a href="#problems">Jobs</a>
+    <a href="#jobs">Jobs</a>
     <a href="#help">Help</a>
     <a href="#exit">Exit</a>
 
 </div>
-<form>
+<form id="allocated-form" onsubmit="return showJobs(event)">
 
     <!-- This is text to notify the specialist how many jobs they've been allocated ()-->
     <label>
-    <div class="container">
-        <div class="textCenter">
+        <div class="container">
+            <div class="textCenter">
 
-        <h1>Allocated Jobs:</h1>
-        <h1>5</h1>
+                <h1>Allocated Jobs:</h1>
+                <h1>5</h1>
 
+            </div>
         </div>
-    </div>
     </label>
     <button>View Jobs</button>
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th></th>
-        </tr>
-
-    </table>
-
 </form>
+<table id="job-list" class="job-list">
+    <tr>
+        <th>Name</th>
+        <th>Operator</th>
+        <th>Serial Number of hardware</th>
+        <th>Operating System</th>
+        <th>Software</th>
+        <th>Problem description</th>
+        <th>Problem type</th>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<script>
+    function showJobs(e) {
+        e.preventDefault();
+        var container = document.getElementById("allocated-form");
+        container.style.display = "none";
+        var job_list = document.getElementById("job-list");
+        job_list.style.display = "inline";
+
+        return false
+    }
+</script>
 </body>
 </html>
 
