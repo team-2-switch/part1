@@ -1,4 +1,4 @@
-/*formats the log in form*/
+/*formats the form*/
 form {
     background-color: #424242;
     border: black solid 1px;
@@ -7,7 +7,6 @@ form {
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
 }
 
@@ -20,7 +19,7 @@ input[type=text], input[type=password], textarea {
     width: 95%
 }
 
-/*Format the container for form*/
+/*Format the container*/
 div.container {
     width: auto;
     margin: 8px;
@@ -54,7 +53,7 @@ button:hover {
 body {
     background-color: #212121;
 }
-
+/*Make-it-All Logo*/
 .logo{
     display: block;
     margin-left: auto;
@@ -102,13 +101,17 @@ section {
 
 /* The side navigation menu */
 .sidebar {
-    margin: 0;
+    margin-left: 0;
     padding: 0;
     width: 200px;
     background-color: #424242;
     position: fixed;
     height: 100%;
     overflow: auto;
+    float: left;
+    left: 1px;
+    top: -1px;
+    border-right: 2px solid #191919;
 }
 
 /* Sidebar links */
@@ -137,4 +140,27 @@ div.textCenter {
 }
 form.submission-form{
  margin-left: 11%;
+}
+
+/*Formatting the table in specialist page*/
+.job-list{
+    display: none;
+    margin: auto;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+}
+/*formatting the tables across the folder*/
+table,th,td,tr{
+    border: 1px solid black;
+     border-collapse: collapse;
+    background-color: #424242;
+}
+
+th,td{
+    padding: 15px;
+}
+
+th{
+    text-align: left;
 }
