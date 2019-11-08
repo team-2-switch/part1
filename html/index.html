@@ -3,45 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Make-It-All Helpdesk</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
 </head>
-<script> 
-        function login(e){
-            e.preventDefault();
-            console.log(document.getElementById("uname").value);
-            
-          
-         if ((document.getElementById("uname").value === "operator" ) && (document.getElementById("passw").value === "Admin1")) {
-                 document.location.href = "C:/Users/gurna/Desktop/part1-master/html/problem-submission.html"
-                 alert("Welcome Operator")
-             }
-             else if ((document.getElementById("uname").value === "specialist" ) && (document.getElementById("passw").value === "Admin1")) {
-                 document.location.href = "C:/Users/gurna/Desktop/part1-master/html/specialist-job-allocation.html"
-                 alert("Welcome Specialist")
-             }
-        else {
+<script>
+    function login(e) {
+        e.preventDefault();
+        console.log(document.getElementById("uname").value);
+
+
+        if ((document.getElementById("uname").value === "operator") && (document.getElementById("passw").value === "Admin1")) {
+            document.location.href = "./problem-submission.html";
+            alert("Welcome Operator")
+        } else if ((document.getElementById("uname").value === "specialist") && (document.getElementById("passw").value === "Admin1")) {
+            document.location.href = "./specialist-job-allocation.html";
+            alert("Welcome Specialist")
+        } else {
             alert("incorrect username/password")
         }
 
-            
-          return false;
-        }
-    </script>
+
+        return false;
+    }
+</script>
 <body>
 
-<img src="../img/logo.png" class="logo" alt="Company Logo" />
-<form onsubmit="return login(event);" >
+<img src="../img/logo.png" class="logo" alt="Company Logo"/>
+<form onsubmit="return login(event);">
     <div class="container">
         <p class="prompt"> Please Log in.</p>
         <!-- This is form for username and password-->
         <label for="uname"><b>Username</b>
-        <input type="text" placeholder="Enter Username..." id="uname" required>
+            <input type="text" placeholder="Enter Username..." id="uname" required>
 
         </label>
         <br/>
         <label for="passw"><b>Password</b>
-        <input type="password" placeholder="Enter Password..." id="passw" required>
+            <input type="password" placeholder="Enter Password..." id="passw" required>
         </label>
         <br/>
         <button type="submit">Login</button>

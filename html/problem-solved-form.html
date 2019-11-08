@@ -15,31 +15,31 @@
     <a href="#help">Help</a>
     <a href="#exit">Exit</a>
 </div>
-<form class="submission-form">
-
+<form class="prob-solved">
+<!--needs action to php above^ for part 2-->
     <div class="container">
         <!-- This is form for problem submission ()-->
         <section>
 
             <label for="cname"><b>Date problem resolved</b>
-                <input type="text" placeholder="Date" name="date" required>
+                <input type="text" placeholder="Enter date..." name="date" id="cname" required>
             </label>
 
-            <label for="oname"><b>Time Resolved</b>
-                <input type="text" placeholder="time" name="time" required>
+            <label for="timeRes"><b>Time Resolved</b>
+                <input type="text" placeholder="Enter time..." name="time" id="timeRes" required>
             </label>
             <br/>
 
-            <label for="ctime"><b>Who resolved the problem?</b>
-                <input type="text" placeholder="name" name="whoResolved" required>
+            <label for="whoRes"><b>Who resolved the problem?</b>
+                <input type="text" placeholder="Enter name..." name="whoResolved" id="whoRes" required>
             </label>
             <br/>
 
         </section>
 
         <section>
-            <label for="xddd>"><b>How the problem was resolved</b>
-             <textarea class="textareaSize2"></textarea>
+            <label for="howProb"><b>How the problem was resolved</b>
+             <textarea class="textareaSize2" placeholder="Please add a description..." id="howProb" required></textarea>
         </label>
             <br/>
         </section>

@@ -3,65 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <title>Problem Submission</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<script>
+    window.onload = function removeBox() {
+        document.getElementById("prob-box").style.display = "none"
+    };
+
+    function showProblemSolved() {
+        document.getElementById("submission-form").style.display = "none";
+        document.getElementById("prob-box").style.display = "inline";
+    }
+
+    function showProblemSubmission() {
+        document.getElementById("prob-box").style.display = "none";
+        document.getElementById("submission-form").style.display = "inline";
+
+    }
+
+    //Function to log out.
+    function logOut() {
+        if (confirm("Log out?")) {
+            document.location.href = "./index.html"
+        } else {
+            //do nothing
+        }
+    }
+</script>
 <div class="sidebar">
     <!-- This is a sidebar for navigation ()-->
     <a href="#settings">Settings</a>
-    <a href="#problems">Problems</a>
+    <a onclick="showProblemSubmission()">Problem Submission</a>
+    <a onclick="showProblemSolved()">Mark Problem As Solved</a>
     <a href="#help">Help</a>
-    <a href="#exit">Exit</a>
+    <a onclick="logOut()">Log out</a>
 </div>
-<form class="submission-form">
+<form class="submission-form" id="submission-form">
 
     <div class="container">
         <!-- This is form for problem submission ()-->
 
         <section>
-        <label for="cname"><b>Caller Name</b>
-            <input type="text" placeholder="Enter Caller Name..." name="cname" required>
-        </label>
+            <label for="cname"><b>Caller Name</b>
+                <input type="text" placeholder="Enter Caller Name..." name="cname" required>
+            </label>
 
-        <label for="oname"><b>Operator Name</b>
-            <input type="text" placeholder="Enter Operator Name..." name="oname" required>
-        </label>
-        <br/>
+            <label for="oname"><b>Operator Name</b>
+                <input type="text" placeholder="Enter Operator Name..." name="oname" id="oname" required>
+            </label>
+            <br/>
 
-        <label for="ctime"><b>Current Time</b>
-            <input type="text" placeholder="placeholder" name="oname" required>
-        </label>
-        <br/>
+            <label for="ctime"><b>Current Time</b>
+                <input type="text" placeholder="placeholder" name="oname" id="ctime" required>
+            </label>
+            <br/>
 
-        <label for="sname"><b>Serial Number</b>
-            <input type="text" placeholder="Serial Number..." name="sname" required>
-        </label>
-        <br/>
+            <label for="sname"><b>Serial Number</b>
+                <input type="text" placeholder="Serial Number..." name="sname" id="sname" required>
+            </label>
+            <br/>
 
-        <label for="oname"><b>Operating System</b>
-            <input type="text" placeholder="Operating System..." name="oname" required>
-        </label>
-        <br/>
+            <label for="os"><b>Operating System</b>
+                <input type="text" placeholder="Operating System..." name="oname" id="os" required>
+            </label>
+            <br/>
 
-        <label for="softwareused"><b>Software</b>
-            <input type="text" placeholder="Software Used..." name="softwareused" required>
-        </label>
-        <br/>
+            <label for="softwareUsed"><b>Software</b>
+                <input type="text" placeholder="Software Used..." name="softwareused" id="softwareUsed" required>
+            </label>
+            <br/>
         </section>
 
-        <section><label for="xddd>"><b>Enter problem Details</b>
-            <textarea class="textareaSize1"> </textarea>
+        <section><label for="prob-details"><b>Enter problem Details</b>
+            <textarea class="textareaSize1" id="prob-details" required> </textarea>
         </label>
-        <br/>
+            <br/>
         </section>
 
         <div class="center">
-            <div class="double"><input type="checkbox" name="option1" value="solved"> Solved<br> <input type="checkbox" name="option2" value="unsolved"> Unsolved</div></div>
+            <div class="double"><input type="checkbox" name="option1" value="solved"> Solved<br> <input type="checkbox"
+                                                                                                        name="option2"
+                                                                                                        value="unsolved">
+                Unsolved
+            </div>
+        </div>
 
         <button type="submit"> Submit Problem</button>
     </div>
 </form>
+<form class="prob-solved" id="prob-box">
+    <!--needs action to php above^ for part 2-->
+    <div class="container">
+        <!-- This is form for problem submission ()-->
+        <section>
+
+            <label for="cname"><b>Date problem resolved</b>
+                <input type="text" placeholder="Enter date..." name="date" id="cname" required>
+            </label>
+
+            <label for="timeRes"><b>Time Resolved</b>
+                <input type="text" placeholder="Enter time..." name="time" id="timeRes" required>
+            </label>
+            <br/>
+
+            <label for="whoRes"><b>Who resolved the problem?</b>
+                <input type="text" placeholder="Enter name..." name="whoResolved" id="whoRes" required>
+            </label>
+            <br/>
+
+        </section>
+
+        <section>
+            <label for="howProb"><b>How the problem was resolved</b>
+                <textarea class="textareaSize2" placeholder="Please add a description..." id="howProb"
+                          required></textarea>
+            </label>
+            <br/>
+        </section>
+
+        <button type="submit">Submit Details</button>
+    </div>
+</form>
 </body>
 </html>
+
+<!--TODO: ADD PERSONNEL  LIST -> SIDEBAR OPTION-->

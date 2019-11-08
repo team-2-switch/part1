@@ -10,6 +10,11 @@ form {
     transform: translate(-50%, -50%);
 }
 
+/*formatting the problem solved form*/
+.prob-solved {
+    margin-left: 11%;
+}
+
 /*Format the input fields*/
 input[type=text], input[type=password], textarea {
     display: inline-block;
@@ -53,14 +58,16 @@ button:hover {
 body {
     background-color: #212121;
 }
+
 /*Make-it-All Logo*/
-.logo{
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.prompt{
-    color: #9E9E9E ;
+
+.prompt {
+    color: #9E9E9E;
 }
 
 div.center {
@@ -92,15 +99,13 @@ textarea {
     width: 100%
 }
 
-.textareaSize1{
+.textareaSize1 {
     height: 400px
 }
 
-.textareaSize2{
+.textareaSize2 {
     height: 150px
 }
-
-
 
 
 section {
@@ -147,29 +152,31 @@ div.content {
 div.textCenter {
     text-align: center;
 }
-form.submission-form{
- margin-left: 11%;
+
+form.submission-form {
+    margin-left: 11%;
 }
 
 /*Formatting the table in specialist page*/
-.job-list{
+.job-list {
     display: none;
     margin: auto;
     position: fixed;
     top: 20%;
     left: 20%;
 }
+
 /*formatting the tables across the folder*/
-table,th,td,tr{
+table, th, td, tr {
     border: 1px solid black;
-     border-collapse: collapse;
+    border-collapse: collapse;
     background-color: #424242;
 }
 
-th,td{
+th, td {
     padding: 15px;
 }
 
-th{
+th {
     text-align: left;
 }

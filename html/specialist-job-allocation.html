@@ -8,14 +8,23 @@
 </head>
 
 <body>
-
+<script>
+    //Function to log out.
+    function logOut() {
+        if (confirm("Log out?")) {
+            document.location.href = "./index.html"
+        } else {
+            //do nothing
+        }
+    }
+</script>
 <div class="sidebar">
 
     <!-- This is a sidebar for navigation ()-->
     <a href="#settings">Settings</a>
     <a href="#jobs">Jobs</a>
     <a href="#help">Help</a>
-    <a href="#exit">Exit</a>
+    <a onclick="logOut()" href="#exit">Log out</a>
 
 </div>
 <form id="allocated-form" onsubmit="return showJobs(event)">
@@ -35,13 +44,16 @@
 
 </form>
 <table id="job-list" class="job-list">
+
+<!--TODO: PLEASE POPULATE TABLE-->
     <tr>
+        <th>ProblemID</th>
         <th>Name</th>
         <th>Operator</th>
-        <th>Serial Number of hardware</th>
+        <th>Serial No. of hardware</th>
         <th>Operating System</th>
         <th>Software</th>
-        <th>Problem description</th>
+        <th>Problem Desc</th>
         <th>Problem type</th>
     </tr>
     <tr>
@@ -58,7 +70,8 @@
     </tr>
 </table>
 <script>
-    function showJobs(e) {
+    function showJobs(e) { //Hides the current form that says allocated jobs
+        //displays table with active jobs
         e.preventDefault();
         var container = document.getElementById("allocated-form");
         container.style.display = "none";
